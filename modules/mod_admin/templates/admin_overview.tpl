@@ -3,7 +3,7 @@
 {% block title %}{_ Pages _}{% endblock %}
 
 {% block content %}
-
+PAGELEN
 {% with q.qpagelen|default:20 as qpagelen %}
 <form id="{{ #form }}" method="GET" action="{% url admin_overview_rsc qs=q.qs %}" class="form-horizontal">
     <div class="pull-right">

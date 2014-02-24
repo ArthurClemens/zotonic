@@ -778,6 +778,7 @@ function z_sorter(sortBlock, sortOptions, sortPostbackInfo)
         var sortItem = new Array({name: 'sort_items', value: sortItems});
 
         z_queue_postback(this.id, sortPostbackInfo, sortItem, true);
+        console.log("sortOptions.update", this.id, sortPostbackInfo, sortItem);
     };
     sortOptions.receive = function (ev, ui) {
         var $target = $(this).data().sortable.element;
